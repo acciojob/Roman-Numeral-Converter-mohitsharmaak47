@@ -10,25 +10,16 @@ function convertToRoman(num) {
     };
 
   //your code herelet result = '';
-
-     let result =''
-    for (const { value, numeral } of romanNumerals) {
-        
-        while (num >= value) {
-            result += numeral;  
-            num -= value; 
-        }
-    }
-
-    return result; // Return the final Roman numeral
-
-}
-// You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
-
-// console.log(convertToRoman(36));
-
-
-
-
-// do not edit below this line
+let roman = ""
+	for(let key in obj){
+		while(num >== obj[key][1]){
+			roman += obj[key][0]
+			roman -= obj[key][0]
+		}
+		if(num == 0)
+			return ans
+			
+		
+	}
+      
 module.exports = convertToRoman
